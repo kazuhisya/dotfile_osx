@@ -1,0 +1,21 @@
+[user]
+    name = Kazuhisa Hara
+    email = kauhisya@gmail.com
+[color]
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+[core]
+    editor = vim -c \"set fenc=utf-8\"
+[alias]
+    st = status
+    up = pull --rebase
+    ci = commit -a
+    gr = log --graph --decorate
+    ol = log --graph --decorate --oneline
+    br = branch
+    co = checkout
+[push]
+    default = matching
