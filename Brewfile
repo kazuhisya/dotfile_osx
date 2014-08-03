@@ -25,7 +25,7 @@ install wget
 
 # .dmg apps
 # Browser
-cask install firefox
+#cask install firefox
 cask install google-chrome
 
 # Note
