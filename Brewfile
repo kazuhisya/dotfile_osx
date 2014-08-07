@@ -6,7 +6,6 @@ upgrade
 
 # For cask
 install caskroom/cask/brew-cask
-install brew-cask
 
 # Formula
 install bash-completion
@@ -39,6 +38,7 @@ cask install appcleaner
 cask install ccleaner
 cask install cd-to
 cask install cyberduck
+cask install day-o
 cask install iterm2
 cask install karabiner
 cask install onyx
