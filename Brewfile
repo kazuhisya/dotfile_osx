@@ -52,3 +52,4 @@ cask install qlstephen
 
 # Remove outdated versions
 cleanup
+cask cleanup
