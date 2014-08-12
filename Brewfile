@@ -38,7 +38,10 @@ cask install appcleaner
 cask install ccleaner
 cask install cd-to
 cask install cyberduck
+<<<<<<< HEAD
 #cask install day-o
+=======
+>>>>>>> c903d028009fbfc1cbf8067afc96ec7f22b82865
 cask install iterm2
 cask install karabiner
 cask install onyx
@@ -53,3 +56,4 @@ cask install qlstephen
 
 # Remove outdated versions
 cleanup
+cask cleanup
