@@ -8,7 +8,8 @@ fi
 # User specific aliases and functions
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-export PATH="~/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export EDITOR=vim
 export GREP_OPTIONS="--color=always"
@@ -34,4 +35,3 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 # PS1 setting
 export PS1="\[\033[36m\][\u@\h \[\033[0m\]\[\033[33m\]\W\[\033[0m\]\[\033[36m\]$(__git_ps1)]$\[\033[0m\] "
-
