@@ -42,6 +42,7 @@ cask install iterm2
 cask install karabiner
 cask install onyx
 cask install scroll-reverser
+cask install simplecap
 cask install the-unarchiver
 
 # QuickLook
