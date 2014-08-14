@@ -299,7 +299,7 @@ autocmd BufWritePre * :%s/\t/  /ge
 " Enable mouse mode
 if has("mouse")
     set mouse=a
-    set clipboard=unnamed,autoselect
+    "set clipboard=unnamed,autoselect
 endif
 " Enable mouse mode for screen
 set ttymouse=xterm2
