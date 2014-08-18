@@ -19,3 +19,7 @@
     co = checkout
 [push]
     default = matching
+[http]
+    sslVerify = false
+[credential]
+    helper = osxkeychain
