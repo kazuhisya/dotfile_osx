@@ -8,7 +8,7 @@ upgrade
 install caskroom/cask/brew-cask
 
 # Formula
-install bash-completion
+#install bash-completion
 install coreutils
 install git
 install git-now
