@@ -44,6 +44,7 @@ cask install onyx
 cask install scroll-reverser
 cask install simplecap
 cask install the-unarchiver
+cask install xtrafinder
 
 # QuickLook
 cask install betterzipql
