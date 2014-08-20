@@ -26,6 +26,10 @@
 	<true/>
 	<key>XtraFinder_XFFitColumnWidthPlugin</key>
 	<true/>
+	<key>XtraFinder_XFFitColumnWidthPlugin_HasMaxWidth</key>
+	<true/>
+	<key>XtraFinder_XFFitColumnWidthPlugin_MaxWidth</key>
+	<real>400</real>
 	<key>XtraFinder_XFFoldersOnTopPlugin</key>
 	<true/>
 	<key>XtraFinder_XFGoUpToolbarButtonPlugin</key>
@@ -54,6 +58,8 @@
 	<key>XtraFinder_XFSpringLoadedPathBarPlugin</key>
 	<false/>
 	<key>XtraFinder_XFTabPlugin</key>
+	<false/>
+	<key>XtraFinder_XFTabPlugin_NarrowTabBar</key>
 	<false/>
 	<key>XtraFinder_XFTabPlugin_NewTabShortcut</key>
 	<dict>
