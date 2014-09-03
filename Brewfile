@@ -13,6 +13,7 @@ install coreutils
 install git
 install git-now
 install gnu-tar
+install htop-osx
 install nkf
 install nmap
 install pstree
