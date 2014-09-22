@@ -46,6 +46,7 @@ cask install scroll-reverser
 cask install simplecap
 cask install the-unarchiver
 cask install xtrafinder
+cask install onepassword
 
 # QuickLook
 cask install betterzipql
