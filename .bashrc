@@ -12,7 +12,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export EDITOR=vim
-export GREP_OPTIONS="--color=always"
+export GREP_OPTIONS="--color"
 export LANG=en_US.UTF-8
 
 alias vi='vim'
@@ -24,7 +24,8 @@ alias wget='wget -c'
 alias yum='brew'
 alias yum-cask='brew cask'
 alias yum-bundle='brew bundle'
-alias yum-up='yum update ; yum-cask update ; yum upgrade ; yum cleanup '
+alias yum-up='yum update; yum-cask update; yum upgrade; yum cleanup; yum-cask cleanup'
+alias yum-cask-up='for c in `brew cask list`; do ! brew cask info $c | grep -qF "Not installed" || brew cask install $c; done; yum-cask cleanup'
 alias date='LANG=en date'
 alias mkpasswd='pwgen'
 alias softwareupdate='sudo softwareupdate'
