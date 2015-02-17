@@ -292,14 +292,13 @@ highlight link ZenkakuSpace Error
 match ZenkakuSpace /　/
 
 " remove white space at the end-of when you save
-autocmd BufWritePre * :%s/\s\+$//ge
-" converting spaces to tab when you save
-autocmd BufWritePre * :%s/\t/  /ge
+set expandtab
 
 " Enable mouse mode
-if has("mouse")
-    set mouse=a
+"if has("mouse")
+    "set mouse=a
     "set clipboard=unnamed,autoselect
-endif
+"endif
+
 " Enable mouse mode for screen
 set ttymouse=xterm2
