@@ -24,8 +24,8 @@ alias wget='wget -c'
 alias yum='brew'
 alias yum-cask='brew cask'
 alias yum-bundle='brew bundle'
-alias yum-up='yum update; yum-cask update; yum upgrade; yum cleanup; yum-cask cleanup'
 alias yum-cask-up='for c in `brew cask list`; do ! brew cask info $c | grep -qF "Not installed" || brew cask install $c; done; yum-cask cleanup'
+alias yum-up='yum update --all; yum-cask update --all; yum upgrade --all; yum cleanup; yum-cask-up'
 alias date='LANG=en date'
 alias mkpasswd='pwgen'
 alias softwareupdate='sudo softwareupdate'
@@ -36,3 +36,6 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 # PS1 setting
 export PS1="\[\033[36m\][\u@\h \[\033[0m\]\[\033[33m\]\W\[\033[0m\]\[\033[36m\]$(__git_ps1)]$\[\033[0m\] "
+
+# Go lang
+export GOPATH=$HOME/golang

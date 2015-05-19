@@ -9,6 +9,7 @@
     interactive = auto
 [core]
     editor = vim -c \"set fenc=utf-8\"
+    attributesfile = ~/.gitattributes
 [alias]
     st = status
     up = pull --rebase
@@ -23,3 +24,6 @@
     sslVerify = false
 [credential]
     helper = osxkeychain
+[diff "xlsx"]
+    binary = true
+    textconv = $GOPATH/bin/git-xlsx-textconv
