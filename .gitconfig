@@ -19,6 +19,7 @@
     br = branch
     co = checkout
     log-auther = shortlog -sne
+    squash = rebase -i head~~
 [push]
     default = matching
 [http]
@@ -28,3 +29,5 @@
 [diff "xlsx"]
     binary = true
     textconv = $GOPATH/bin/git-xlsx-textconv
+[gpg]
+    program = /usr/local/bin/gpg
