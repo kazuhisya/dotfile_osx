@@ -304,3 +304,6 @@ set expandtab
 
 " Enable mouse mode for screen
 set ttymouse=xterm2
+
+" search keyword cleare ESC x2
+nnoremap <ESC><ESC> :noh<CR>
