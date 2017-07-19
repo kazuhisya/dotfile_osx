@@ -27,7 +27,7 @@ export PS1="\[\033[36m\][\u@\h \[\033[0m\]\[\033[33m\]\W\[\033[0m\]\[\033[36m\]\
 
 # Alias
 alias date='LANG=en date'
-alias git-clean-branch='git fetch --prune $(git fetch -p)'
+alias git-clean-branch='git fetch --prune $1 $(git fetch -p $1)'
 alias ls='ls --color'
 alias l='ls'
 alias la='ls -la'
