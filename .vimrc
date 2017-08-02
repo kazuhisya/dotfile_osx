@@ -199,6 +199,7 @@ set autoindent
 set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.md :set filetype=markdown
 au BufNewFile,BufRead Dockerfile* :set filetype=dockerfile
 au BufNewFile,BufRead *.spec.* :set filetype=spec
