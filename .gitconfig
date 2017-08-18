@@ -1,6 +1,11 @@
 [user]
     name = Kazuhisa Hara
     email = kazuhisya@gmail.com
+    signingkey = <key>
+[includeIf "gitdir:~/src/work/"]
+    [user]
+        email = <mail>
+        signingkey = <key>
 [color]
     ui = true
     diff = auto
@@ -31,3 +36,4 @@
     textconv = $GOPATH/bin/git-xlsx-textconv
 [gpg]
     program = /usr/local/bin/gpg
+
