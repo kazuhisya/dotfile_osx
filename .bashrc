@@ -42,6 +42,7 @@ alias yum='brew'
 alias yum-bundle='brew bundle'
 alias yum-cask='brew cask'
 alias yum-up='yum update --all ; yum upgrade'
+alias git-gc-r='find ./ -name "*.git" -execdir sh -c "cd {} && git gc" \;'
 
 # for Juniper VPN Clent (Juno Plus)
 vpn-start() {
