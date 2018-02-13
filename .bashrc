@@ -9,7 +9,6 @@ fi
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export EDITOR="vim"
 export GREP_OPTIONS="--color"
