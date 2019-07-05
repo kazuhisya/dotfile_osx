@@ -32,7 +32,7 @@ alias l='ls'
 alias la='ls -la'
 alias ll='ls -l'
 alias mkpasswd='pwgen'
-alias scp="scp -o 'Cipher=arcfour128'"
+alias scp="scp -o 'Cipher=aes128-cbc'"
 alias softwareupdate='sudo softwareupdate'
 alias ssh_key-to-clipbord="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias vi='vim'
@@ -40,17 +40,17 @@ alias wget='wget -c'
 alias yum='brew'
 alias yum-bundle='brew bundle'
 alias yum-cask='brew cask'
-alias yum-up='yum update --all ; yum upgrade'
+alias yum-up='yum update ; yum upgrade'
 alias git-gc-r='find ./ -name "*.git" -execdir sh -c "cd {} && git gc" \;'
 
 # for Juniper VPN Clent (Juno Plus)
 vpn-start() {
-        sudo launchctl load -w /Library/LaunchDaemons/net.juniper.AccessService.plist
-        launchctl load -w /Library/LaunchAgents/net.juniper.pulsetray.plist
+        sudo launchctl load -w /Library/LaunchDaemons/net.pulsesecure.AccessService.plist
+        launchctl load -w /Library/LaunchAgents/net.pulsesecure.pulsetray.plist
 }
 vpn-stop() {
-        launchctl unload -w /Library/LaunchAgents/net.juniper.pulsetray.plist
-        sudo launchctl unload -w /Library/LaunchDaemons/net.juniper.AccessService.plist
+        launchctl unload -w /Library/LaunchAgents/net.pulsesecure.pulsetray.plist
+        sudo launchctl unload -w /Library/LaunchDaemons/net.pulsesecure.AccessService.plist
         osascript -e 'tell application "Junos Pulse" to quit'
 }
 
