@@ -6,9 +6,11 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-export PATH="$HOME/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export EDITOR="vim"
 export GREP_OPTIONS="--color"
@@ -23,6 +25,9 @@ source /usr/local/etc/bash_completion
 
 # PS1 setting
 export PS1="\[\033[36m\][\u@\h \[\033[0m\]\[\033[33m\]\W\[\033[0m\]\[\033[36m\]\$(__git_ps1)]$\[\033[0m\] "
+
+# Opting out
+export HOMEBREW_NO_ANALYTICS=1
 
 # Alias
 alias date='LANG=en date'

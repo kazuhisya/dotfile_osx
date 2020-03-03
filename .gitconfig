@@ -2,10 +2,12 @@
     name = Kazuhisa Hara
     email = kazuhisya@gmail.com
     signingkey = <key>
-[includeIf "gitdir:~/src/work/"]
-    [user]
-        email = <mail>
-        signingkey = <key>
+#[includeIf "gitdir:~/src/work/"]
+#    path = ~/.gitconfig-work
+#
+#    [user]
+#        email = <mail>
+#        signingkey = <key>
 [color]
     ui = true
     diff = auto
@@ -36,4 +38,7 @@
     textconv = $GOPATH/bin/git-xlsx-textconv
 [gpg]
     program = /usr/local/bin/gpg
-
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
